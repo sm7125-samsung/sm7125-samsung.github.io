@@ -2,12 +2,12 @@
 <html style="font-size: 16px;" lang="en"><head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="LINEAGE OS INSTALL">
+    <meta name="keywords" content="General Troubleshooting">
     <meta name="description" content="">
     <meta name="robots" content="noindex">
-    <title>LOS - Install Guide</title>
+    <title>ADB</title>
     <link rel="stylesheet" href="index.css" media="screen">
-<link rel="stylesheet" href="LOS.css" media="screen">
+<link rel="stylesheet" href="ADB.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="index.js" defer=""></script>
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
@@ -15,7 +15,7 @@
     
 
     <meta name="theme-color" content="#1054f7">
-    <meta property="og:title" content="LOS - Install Guide">
+    <meta property="og:title" content="ADB">
     <meta property="og:type" content="website">
   </head>
   <body class="u-body u-xl-mode" data-lang="en"><header class="u-black u-clearfix u-header u-sticky u-sticky-76a6 u-header" id="sec-5358"><div class="u-clearfix u-sheet u-sheet-1">
@@ -56,8 +56,32 @@
     <style class="darkreader darkreader--sync" media="screen"></style>
     <section class="u-align-center u-black u-clearfix u-section-1" id="sec-caf0">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <img class="u-image u-image-contain u-image-default u-image-1" src="/images/los.png" alt="" data-image-width="1200" data-image-height="600">
-        <h2 class="u-custom-font u-font-montserrat u-text u-text-1">LINEAGE OS INSTALL</h2>
+        <h2 class="u-custom-font u-font-montserrat u-text u-text-1">SET UP ADB VIA PLATFORM TOOLS<br>
+        </h2>
+        <p class="u-align-left u-text u-text-2">
+          <span style="font-size: 1.25rem;"> Download and install the necessary drivers. Download the newest Samsung drivers from&nbsp;<a href="https://developer.samsung.com/mobile/android-usb-driver.html" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-1" target="_blank">here.</a>
+            <br>Download the&nbsp;<font face="'Open Sans',sans-serif">
+              <a href="https://dl.google.com/android/repository/platform-tools-latest-windows.zip" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-2" target="_blank">platform-tools zip</a>
+            </font>&nbsp;from Google.<br>Extract it somewhere - for example, <span class="u-text-custom-color-1" style="font-weight: 700;">%USERPROFILE%\adb-fastboot</span>
+          </span>
+          <br>
+          <br>
+          <span style="font-size: 1.25rem;">
+            <span style="font-weight: 700;">
+              <span style="font-size: 1rem;">
+                <span style="font-size: 1.25rem;"> On Windows 7/8:</span>
+              </span>
+            </span>
+            <br>
+          </span>From the desktop, right-click My Computer and select Properties<br>In the System Properties window, click on the Advanced tab<br>In the Advanced section, click the Environment Variables button<br>In the Environment Variables window, highlight the Path variable in the Systems Variable section and click the Edit button<br>Append&nbsp;<span class="u-text-custom-color-1" style="font-size: 1rem; font-weight: 700;">;%USERPROFILE%\adb-fastboot\platform-tools</span> to the end of the existing Path definition (the semi-colon separates each path entry)<br>
+          <br>
+          <span style="font-size: 1.25rem;">
+            <span style="font-weight: 700;">On Windows 10:</span>
+          </span>
+          <span style="font-size: 1rem;">
+            <br>
+          </span>Open the Start menu, and type “advanced system settings”<br>Select “View advanced system settings”<br>Click on the Advanced tab<br>Open the “Environment Variables” window<br>Select the Path variable under “System Variables” and click the “Edit” button<br>Click the “New” button<br>Insert <span style="font-weight: 700;" class="u-text-custom-color-1">%USERPROFILE%\adb-fastboot\platform-tools</span> in the text field
+        </p>
       </div>
       <style class="darkreader darkreader--sync" media="screen"></style>
       <style class="darkreader darkreader--sync" media="screen"></style>

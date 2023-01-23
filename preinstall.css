@@ -38,16 +38,24 @@
 }
 
 .u-section-1 .u-text-6 {
-  margin-left: 12px;
-  margin-right: 12px;
-  margin-bottom: 0;
+  margin: 25px 12px 0;
 }
 
 .u-section-1 .u-text-7 {
-  margin: 20px 24px 60px;
+  margin: 0 24px 60px;
 }
 
 .u-section-1 .u-btn-3 {
+  background-image: none;
+  padding: 0;
+}
+
+.u-section-1 .u-btn-4 {
+  background-image: none;
+  padding: 0;
+}
+
+.u-section-1 .u-btn-5 {
   background-image: none;
   padding: 0;
 }
