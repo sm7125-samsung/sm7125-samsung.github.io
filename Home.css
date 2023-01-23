@@ -23,7 +23,7 @@
 
 .u-section-1 .u-repeater-1 {
   grid-template-columns: calc(50% - 15px) calc(50% - 15px);
-  min-height: 691px;
+  min-height: 692px;
   grid-gap: 30px 30px;
 }
 
@@ -58,7 +58,7 @@
 }
 
 .u-section-1 .u-image-3 {
-  background-image: url("/images/twrp.png");
+  background-image: url("/images/twrp_main.png");
   background-position: 50% 50%;
 }
 
@@ -71,7 +71,7 @@
 }
 
 .u-section-1 .u-image-4 {
-  background-image: url("/images/ofox.png");
+  background-image: url("/images/ofox_main.png");
   background-position: 50% 50%;
 }
 
