@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Preinstall instructions">
+    <meta name="description" content="">
+    <meta name="robots" content="noindex">
+    <title>PREINSTALL INSTRUCTIONS</title>
+    <link rel="stylesheet" href="index.css" media="screen">
+<link rel="stylesheet" href="preinstall.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="index.js" defer=""></script>
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    
+
+    <meta name="theme-color" content="#1054f7">
+    <meta property="og:title" content="PREINSTALL INSTRUCTIONS">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body u-xl-mode" data-lang="en">
+    <style class="darkreader darkreader--sync" media="screen"></style>
+    <style class="darkreader darkreader--sync" media="screen"></style>
+    <style class="darkreader darkreader--sync" media="screen"></style>
+    <section class="u-align-center u-black u-clearfix u-section-1" id="sec-caf0">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-custom-font u-font-montserrat u-text u-text-1"> PREINSTALL INSTRUCTIONS</h2>
+        <h3 class="u-text u-text-2">Unlock Bootloader<br>
+        </h3>
+        <ol class="u-align-left u-text u-text-3">
+          <li>Connect the device to a Wi-Fi network.</li>
+          <li>Enable Developer Options by pressing the “Build Number” option in the “Settings” app within the “About” menu.</li>
+          <li>From within the Developer options menu, enable OEM unlock.</li>
+          <li>Connect USB cable to PC Power off the device, and boot it into download mode : With the device powered off, hold <span style="font-style: italic;">Volume Up + Volume Down</span>
+          </li>
+          <li>Now, hold down the “Volume Up” button until you see the “Unlock bootloader” screen.</li>
+          <li>Then press the “Volume Up” button once to unlock the bootloader.</li>
+          <li>Your device will reboot twice and erase your data, you may now unplug the USB cable from your device.</li>
+          <li>Run through Android Setup skipping everything you can, then connect the device to a Wi-Fi network.</li>
+          <li>Re-enable Development settings by clicking the “Build Number” option 7 times, in the “Settings” app within the “About” menu, and verify that “OEM Unlock” is enabled and greyed out in the “Developer options” menu.</li>
+        </ol>
+        <h3 class="u-align-center u-text u-text-4">Patch VBMETA</h3>
+        <ol class="u-align-left u-text u-text-5">
+          <li>VBMETA is the partition that basically holds partition checksums that are verified during boot. It is a way to detect if any partitions have been modified by installing a custom recovery or a custom rom. This is why, if we want to boot we need to patch this.</li>
+          <li>To patch VBMETA, <a href="https://github.com/sm7125-samsung/sm7125-samsung.github.io/releases/download/misc/patched_vbmeta.tar" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-1" target="_blank">download the tar file from here</a>.&nbsp;
+          </li>
+          <li>Boot into download mode following step 4 from above and then click the button that the onscreen instructions correlate to “Continue”.</li>
+          <li>Select the patched VBMETA file you downloaded in the AP slot in <a href="https://gitlab.com/Ryzen5950XT/odin_dl/-/raw/main/Odin3_v3.14.4.zip?inline=false" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-2" target="_blank">odin </a>and hit "Start".
+          </li>
+        </ol>
+        <h2 class="u-align-center u-text u-text-6">Extra Steps</h2>
+        <ol class="u-align-left u-text u-text-7">
+          <li>Please give the <a href="/Troubleshooting.html" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-3">general troubleshooting and info page</a> a read as well before continuing.
+          </li>
+          <li>Please go to this page to decide what recovery to install and use as well.</li>
+        </ol>
+      </div>
+      <style class="darkreader darkreader--sync" media="screen"></style>
+      <style class="darkreader darkreader--sync" media="screen"></style>
+      <style class="darkreader darkreader--sync" media="screen"></style>
+      <style class="darkreader darkreader--sync" media="screen"></style>
+      <style class="darkreader darkreader--sync" media="screen"></style>
+    </section>
+    <style class="darkreader darkreader--sync" media="screen"></style>
+</body></html>
