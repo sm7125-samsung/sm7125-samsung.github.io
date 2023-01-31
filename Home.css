@@ -23,7 +23,7 @@
 
 .u-section-1 .u-repeater-1 {
   grid-template-columns: calc(50% - 15px) calc(50% - 15px);
-  min-height: 692px;
+  min-height: 1053px;
   grid-gap: 30px 30px;
 }
 
@@ -79,6 +79,19 @@
   padding: 30px;
 }
 
+.u-section-1 .u-list-item-5 {
+  --effect-scale: 1.25;
+}
+
+.u-section-1 .u-image-5 {
+  background-image: url("/images/NcX_smol.png");
+  background-position: 50% 50%;
+}
+
+.u-section-1 .u-container-layout-5 {
+  padding: 30px;
+}
+
 @media (max-width: 1199px) {
   .u-section-1 .u-list-item-1 {
     background-position: 49.2% 50%;
@@ -93,6 +106,10 @@
   }
 
   .u-section-1 .u-list-item-4 {
+    background-position: 49.2% 50%;
+  }
+
+  .u-section-1 .u-list-item-5 {
     background-position: 49.2% 50%;
   }
 }
@@ -156,6 +173,11 @@
   }
 
   .u-section-1 .u-container-layout-4 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .u-section-1 .u-container-layout-5 {
     padding-left: 20px;
     padding-right: 20px;
   }
