@@ -2,12 +2,12 @@
 <html style="font-size: 16px;" lang="en"><head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="TEAMWIN ANDROID RECOVERY (TWRP) INSTALL">
+    <meta name="keywords" content="Install Guides">
     <meta name="description" content="">
     <meta name="robots" content="noindex">
-    <title>TWRP - Install Guide</title>
+    <title>riceDroid - Install Guide</title>
     <link rel="stylesheet" href="index.css" media="screen">
-<link rel="stylesheet" href="TWRP.css" media="screen">
+<link rel="stylesheet" href="rice-Install.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="index.js" defer=""></script>
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
@@ -15,7 +15,7 @@
     
 
     <meta name="theme-color" content="#1054f7">
-    <meta property="og:title" content="TWRP - Install Guide">
+    <meta property="og:title" content="riceDroid - Install Guide">
     <meta property="og:type" content="website">
   <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
   <body class="u-body u-xl-mode" data-lang="en"><header class="u-black u-clearfix u-header u-sticky u-sticky-76a6 u-header" id="sec-5358"><div class="u-clearfix u-sheet u-valign-bottom-xs u-sheet-1">
@@ -60,24 +60,11 @@
     <style class="darkreader darkreader--sync" media="screen"></style>
     <section class="u-align-center u-black u-clearfix u-section-1" id="sec-caf0">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <img class="u-image u-image-contain u-image-default u-image-1" src="/images/twrp.png" alt="" data-image-width="512" data-image-height="512">
-        <h2 class="u-custom-font u-font-montserrat u-text u-text-1">TEAMWIN ANDROID RECOVERY (TWRP) INSTALL</h2>
-        <ol class="u-align-left u-text u-text-2">
-          <li> Follow all the <a href="/preinstall.html" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-1">preinstall steps from here.</a>
-          </li>
-          <li>Download TWRP for your device. <a href="https://twrp.me/samsung/samsunggalaxya52q.html" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-2" target="_blank">(A52)</a>
-            <a href="https://twrp.me/samsung/samsunggalaxya72q.html" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-3" target="_blank">(A72)</a>
-          </li>
-          <li>Turn off your phone, connect it to PC and reboot to download mode by holding down Volume up, Volume down and power button at the same time.</li>
-          <li>Open Odin and check if your device is detected, then untick "Autoreboot" in its settings.</li>
-          <li>Put the tar file you downloaded into the AP tab</li>
-          <li>Click start and wait for the installation to finish, Odin will show PASS</li>
-          <li>Now hold down Power button and Volume down for about 10 seconds to force reboot the device</li>
-          <li>Immediately after the screen goes black release the keys and hold down Volume up and Power button at the same time until you enter TWRP (You may need to release the keys after about 20-30secs due to the "unlocked bootloader" warning)</li>
-          <li>If you properly followed all the steps you should now see the TWRP menu.</li>
-          <li>I&nbsp;<b><b>HIGHLY</b></b>&nbsp;recommend to flash&nbsp;<a href="https://github.com/Simon1511/multidisabler-samsung/releases" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-4" target="_blank">multidisabler</a>&nbsp;and right after you enter TWRP to disable forced encryption and stock recovery restoration.<br>
-          </li>
-        </ol>
+        <img class="u-image u-image-default u-image-1" src="/images/sushi.png" alt="" data-image-width="500" data-image-height="500">
+        <h2 class="u-custom-font u-font-montserrat u-text u-text-1">RICEDROID INSTALL</h2>
+        <p class="u-text u-text-2">1)&nbsp; Follow all the <a href="/preinstall.html" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-1">preinstall steps from here.</a>
+          <br> 2)&nbsp; Install OrangeFox using <a href="/OrangeFox.html" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-2">the guide here</a>, or TWRP (3.7.0_12-2 and later versions) using <a href="/TWRP.html" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-3">the guide here</a>.<br>3)&nbsp; Download the Pixel Experience build for your device <a href="https://www.pling.com/p/1985396/" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-4" target="_blank">A52 &amp; A72</a>. Gapps are included.<br>4)&nbsp; Flash the Pixel Experience zip, either from sdcard or usb storage, or use adb sideload method.<br>5)&nbsp; Format data in OrangeFox/TWRP, otherwise you may end up in a bootloop if using encryption or coming from stock ROM.<br>6)&nbsp; Wipe metadata and cache partitions. If metadata partition isnt available in wipe menu you are on ​VERY outdated TWRP/OFox.<br>7)&nbsp; Reboot.
+        </p>
       </div>
       <style class="darkreader darkreader--sync" media="screen"></style>
       <style class="darkreader darkreader--sync" media="screen"></style>
