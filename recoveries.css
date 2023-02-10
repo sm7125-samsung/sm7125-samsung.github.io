@@ -15,7 +15,7 @@
 }
 
 .u-section-1 .u-table-1 {
-  width: 940px;
+  width: 938px;
   margin: 25px auto 60px;
 }
 
@@ -36,9 +36,17 @@
   background-image: none;
 }
 
+.u-section-1 .u-table-cell-5 {
+  background-image: none;
+}
+
 .u-section-1 .u-btn-1 {
   background-image: none;
   padding: 0;
+}
+
+.u-section-1 .u-table-cell-9 {
+  background-image: none;
 }
 
 .u-section-1 .u-btn-2 {
