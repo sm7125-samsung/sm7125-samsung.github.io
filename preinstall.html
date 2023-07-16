@@ -65,26 +65,20 @@
         </h3>
         <ol class="u-align-left u-text u-text-3">
           <li>Connect the device to a Wi-Fi network.</li>
-          <li>Enable Developer Options by pressing the “Build Number” option in the “Settings” app within the “About” menu.</li>
-          <li>From within the Developer options menu, enable OEM unlock.</li>
-          <li>Connect USB cable to PC Power off the device, and boot it into download mode : With the device powered off, hold <span style="font-style: italic;">Volume Up + Volume Down</span>
-          </li>
-          <li>Now, hold down the “Volume Up” button until you see the “Unlock bootloader” screen.</li>
-          <li>Then press the “Volume Up” button once to unlock the bootloader.</li>
-          <li>Your device will reboot twice and erase your data, you may now unplug the USB cable from your device.</li>
-          <li>Run through Android Setup skipping everything you can, then connect the device to a Wi-Fi network.</li>
-          <li>Re-enable Development settings by clicking the “Build Number” option 7 times, in the “Settings” app within the “About” menu, and verify that “OEM Unlock” is enabled and greyed out in the “Developer options” menu.</li>
+          <li>Go to Settings, "About phone", "Software Information" and press the "Build Number" option until it asks you to unlock Developer Mode.</li>
+          <li>Go back into Settings, there should be a new option called "Developer Options" at the bottom now.</li>
+          <li>In the Developer Options search for "OEM Unlock" and enable it.</li>
+          <li>Turn off your phone and connect it to a PC.
+          <li>Boot your phone into download mode: Hold <span style="font-style: italic;">Volume Up + Volume Down + Power button</span></li>
+          <li>Once you are in Download Mode, hold the <span style="font-style: italic;">Volume Up</span> button to enter "Device unlock mode".</li>
+          <li>Then press the <span style="font-style: italic;">Volume Up</span> button once to unlock the bootloader.</li>
+          <li>Your device will reboot twice and erase your data, you can now unplug the USB cable from your device.</li>
+          <li>Run through Android Setup and skip everything you can, then connect the device to a Wi-Fi network.</li>
+          <li>Re-enable Developer Options by clicking the “Build Number” option 7 times, in the “Settings” app within the “About Phone” menu, and verify that “OEM Unlock” in Developer Options is enabled and greyed out.</li>
+          <li>You have now successfully unlocked your bootloader.</li>
+          <li>You can now install <a href="TWRP.html" class="u-text-palette-1-light-1">TWRP</a> or <a href="OrangeFox.html" class="u-text-palette-1-light-1">OrangeFox</a> if wanted.</li>
         </ol>
-        <h3 class="u-align-center u-text u-text-4">Patch VBMETA</h3>
-        <ol class="u-align-left u-text u-text-5">
-          <li>VBMETA is the partition that basically holds partition checksums that are verified during boot. It is a way to detect if any partitions have been modified by installing a custom recovery or a custom rom. This is why, if we want to boot we need to patch this.</li>
-          <li>To patch VBMETA, download the tar file for your device&nbsp;<a href="https://github.com/sm7125-samsung/sm7125-samsung.github.io/releases/tag/vbmeta" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-1" target="_blank">from here</a>.
-          </li>
-          <li>Boot into download mode following step 4 from above and then click the button that the onscreen instructions correlate to “Continue”.</li>
-          <li>Select the patched VBMETA file you downloaded in the AP slot in <a href="https://gitlab.com/Ryzen5950XT/odin_dl/-/raw/main/Odin3_v3.14.4.zip?inline=false" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-2" target="_blank">odin </a>and hit "Start".
-          </li>
-        </ol>
-        <h2 class="u-align-center u-text u-text-6">Extra Steps</h2>
+        <h2 class="u-align-center u-text u-text-6">Additional Information</h2>
         <ul class="u-align-left u-text u-text-7">
           <li>Please give the <a href="/Troubleshooting.html" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-3">general troubleshooting and info page</a> a read as well before continuing.
           </li>

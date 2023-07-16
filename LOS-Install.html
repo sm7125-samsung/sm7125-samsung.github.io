@@ -75,51 +75,43 @@
             <div class="u-black u-container-style u-tab-active u-tab-pane u-tab-pane-1" id="tab-14b7" role="tabpanel" aria-labelledby="link-tab-14b7">
               <div class="u-container-layout u-container-layout-1">
                 <ol class="u-text u-text-2">
-                  <li>Follow all the <a href="/preinstall.html" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-1">preinstall steps from here.</a>
-                  </li>
-                  <li>Download the&nbsp;LineageOS Recovery <a href="https://download.lineageos.org/a52q" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-2" target="_blank">(A52)</a>
-                    <a href="https://download.lineageos.org/a72q" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-3" target="_blank">(A72)</a>. Simply download the latest recovery file.
-                  </li>
-                  <li>Rename the downloaded image to “recovery.img”, open a Command Prompt in the folder where the file was downloaded, and TAR the file by running&nbsp;tar -cvf recovery.tar recovery.img.</li>
-                  <li>Power off the device, and boot it into download mode:With the device powered off, hold&nbsp;Volume Up&nbsp;+&nbsp;Volume Down&nbsp;and connect USB cable to PC and device.</li>
-                  <li>Now, click the button that the onscreen instructions correlate to “Continue”.</li>
-                  <li>Open Odin and select the recovery.tar from step 2 in the AP slot. Click start.<br>
-                  </li>
-                  <li>Download the&nbsp;LineageOS installation package&nbsp;<a href="https://download.lineageos.org/a52q" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-4" target="_blank">(A52)</a>
-                    <a href="https://download.lineageos.org/a72q" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-5" target="_blank">(A72)</a>&nbsp;that you would like to install.
-                  </li>
-                  <li>If you are not in recovery, reboot into recovery: With the device powered off, hold&nbsp;<span style="font-style: italic;">Volume Up&nbsp;+&nbsp;Power</span>&nbsp;while the device is connected to a PC via USB cable.<br>
-                  </li>
-                  <li>Now tap&nbsp;Factory Reset, then&nbsp;Format data / factory reset&nbsp;and continue with the formatting process. This will remove encryption and delete all files stored in the internal storage, as well as format your cache partition. Return to the main menu.</li>
-                  <li>Sideload the LineageOS .zip&nbsp;package:</li>
-                  <li>On the device, select “Apply Update”, then “Apply from ADB” to begin sideload.</li>
-                  <li>On the host machine, sideload the package using:&nbsp;adb sideload filename.zip<br>
-                  </li>
-                  <li>Optionally, flash Gapps right after. I recommend Mind The Gapps. <a href="https://sourceforge.net/projects/flamegapps/files/arm64/canary/android-13/" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-6" target="_blank">(FlameGapps Canary)</a> or <a href="https://sourceforge.net/projects/nikgapps/files/Canary-Releases/NikGapps-T/" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-7" target="_blank">(NikGapps Canary)</a> or <a href="https://wiki.lineageos.org/gapps" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-8" target="_blank">(Mind The Gapps)</a>, using&nbsp;adb sideload filename.zip<br>
-                  </li>
-                  <li>Once you have installed everything successfully, click the back arrow in the top left of the screen, then “Reboot system now”.<br>
-                  </li>
+                  <li>Follow all the <a href="/preinstall.html" class="u-text-palette-1-light-1">preinstall steps from here.</a></li>
+                  <li>Download the LineageOS zip, recovery.img and vbmeta.img from here: <a href="https://download.lineageos.org/a52q" class="u-text-palette-1-light-1" target="_blank">A52</a>
+                    | <a href="https://download.lineageos.org/a72q" class="u-text-palette-1-light-1" target="_blank">A72</a>. Simply download the latest files.</li>
+                  <li>If wanted, download <a href="https://wiki.lineageos.org/gapps#mobile" class="u-text-palette-1-light-1" target="_blank">Google apps</a> too</li>
+                  <li>Open a Command Prompt in the folder where the files were downloaded, and TAR each .img file by running <br><span style="font-style: italic;">tar -cvf recovery.tar recovery.img</span> and <span style="font-style: italic;">tar -cvf vbmeta.tar vbmeta.img</span>.
+                    Alternatively, you can use 7-Zip by doing Right Click on each .img file, then select "Add to Archive" in the 7-Zip menu and select "Tar" as compression method.</li>
+                  <li>Power off the device and connect it to a PC.</li>
+                  <li>Now hold <span style="font-style: italic;">Volume Up + Volume Down + Power</span> buttons until you enter Download Mode.</li>
+                  <li>Now, confirm by pressing <span style="font-style: italic;">Volume Up</span> once.</li>
+                  <li>Open Odin and make sure your phone is detected (it says "Added!" in the Message window).</li>
+                  <li>Put the recovery .tar file you created into the AP tab.</li>
+                  <li>Put the vbmeta .tar file you created into the USERDATA tab.</li>
+                  <li>Once the phone reboots after pressing "Start", hold <span style="font-style: italic;">Volume Up + Power</span> buttons until you reach LineageOS recovery.</li>
+                  <li>Click "Start", the phone will automatically reboot. Now hold <span style="font-style: italic;">Volume Up + Power</span> buttons for at least 10 seconds until you boot into LineageOS recovery.</li>
+                  <li>If you properly followed all the steps you should now see the LineageOS recovery menu. If not, repeat all steps.</li>
+                  <li>Now click <span style="font-style: italic;">Factory Reset</span> and confirm the process.</li>
+                  <li>Now select "Apply Update" and then "Apply from ADB" on the phone to sideload the LineageOS .zip package. Alternatively, copy the LineageOS zip to your phone's SD card and select "Choose from SD card".</li>
+                  <li>On your Computer, sideload the LineageOS package using <span style="font-style: italic;">adb sideload lineageOS.zip</span></li>
+                  <li>Optionally, flash Gapps right after: <span style="font-style: italic;">adb sideload MindTheGapps.zip</span>.</li>
+                  <li>Once you have installed everything successfully, click the back arrow in the top left corner of the screen, then “Reboot system now”.</li>
+                  <li>If you did everything correctly then your phone will reboot into LineageOS.</li>
                 </ol>
               </div>
             </div>
             <div class="u-black u-container-style u-tab-pane u-tab-pane-2" id="tab-0da5" role="tabpanel" aria-labelledby="link-tab-0da5">
               <div class="u-container-layout u-container-layout-2">
                 <ol class="u-text u-text-3">
-                  <li>Follow all the <a href="/preinstall.html" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-9">preinstall steps from here.</a>
-                    <br>
-                  </li>
-                  <li>Install OrangeFox using <a href="/OrangeFox.html" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-10">the guide here</a>, or TWRP using <a href="/TWRP.html" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-11">the guide here</a>.
-                  </li>
-                  <li>Download the LineageOS build for your device <a href="https://download.lineageos.org/a52q" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-12" target="_blank">(A52)</a>
-                    <a href="https://download.lineageos.org/a72q" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-13" target="_blank">(A72)</a>. Gapps are included.
-                  </li>
-                  <li>Flash the LineageOS zip, either from sdcard or usb storage, or use adb sideload method.</li>
-                  <li>Optionally, flash Gapps right after. I recommend Mind The Gapps. <a href="https://sourceforge.net/projects/flamegapps/files/arm64/canary/android-13/" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-14" target="_blank">(FlameGapps Canary)</a> or <a href="https://sourceforge.net/projects/nikgapps/files/Canary-Releases/NikGapps-T/" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-15" target="_blank">(NikGapps Canary)</a> or <a href="https://wiki.lineageos.org/gapps" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-16" target="_blank">(Mind The Gapps)</a>&nbsp;<br>
-                  </li>
-                  <li>Format data in TWRP/Orangefox, otherwise you may end up in a bootloop if using encryption or coming from stock ROM.</li>
-                  <li>Wipe metadata and cache partitions. If metadata partition isnt available in wipe menu you are on ​VERY outdated TWRP/ofox.</li>
-                  <li>Reboot.<br>
-                  </li>
+                  <li>Follow all the <a href="/preinstall.html" class="u-text-palette-1-light-1">preinstall steps from here.</a></li>
+                  <li>Install OrangeFox using <a href="/OrangeFox.html" class="u-text-palette-1-light-1">the guide here</a>, or TWRP using <a href="/TWRP.html" class="u-text-palette-1-light-1">the guide here</a>.</li>
+                  <li>Download the LineageOS build for your device <a href="https://download.lineageos.org/a52q" class="u-text-palette-1-light-1" target="_blank">A52</a>
+                    | <a href="https://download.lineageos.org/a72q" class="u-text-palette-1-light-1" target="_blank">A72</a>.</li>
+                  <li>If wanted, download <a href="https://wiki.lineageos.org/gapps#mobile" class="u-text-palette-1-light-1" target="_blank">Google apps</a> too</li>
+                  <li>Copy the LineageOS zip to your phone's SD card or a USB Storage, or use adb sideload method.</li>
+                  <li>Flash the LineageOS zip using the "Install" button menu.</li>
+                  <li>After that go to "Wipe", "Format data" and confirm with "yes", otherwise you may end up in a bootloop if using encryption or coming from stock ROM.</li>
+                  <li>Again go into the "Wipe" menu, select "Advanced Wipe" and tick metadata and cache partitions.</li>
+                  <li>If you did everything correctly then your phone will reboot into LineageOS.</li>
                 </ol>
               </div>
             </div>

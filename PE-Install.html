@@ -75,47 +75,39 @@
             <div class="u-black u-container-style u-tab-active u-tab-pane u-tab-pane-1" id="tab-14b7" role="tabpanel" aria-labelledby="link-tab-14b7">
               <div class="u-container-layout u-valign-top u-container-layout-1">
                 <ol class="u-text u-text-2">
-                  <li>Follow all the <a href="/preinstall.html" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-1">preinstall steps from here.</a>
-                  </li>
-                  <li>Download the&nbsp;PixelExperience Recovery <a href="https://download.pixelexperience.org/a52q/" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-2" target="_blank">(A52)</a>
-                    <a href="https://download.pixelexperience.org/a72q/" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-3" target="_blank">(A72)</a>. Simply download the latest recovery file.
-                  </li>
-                  <li>Rename the downloaded image to “recovery.img”, open a Command Prompt in the folder where the file was downloaded, and TAR the file by running&nbsp;tar -cvf recovery.tar recovery.img.</li>
-                  <li>Power off the device, and boot it into download mode:With the device powered off, hold&nbsp;Volume Up&nbsp;+&nbsp;Volume Down&nbsp;and connect USB cable to PC and device.</li>
-                  <li>Now, click the button that the onscreen instructions correlate to “Continue”.</li>
-                  <li>Open Odin and select the recovery.tar from step 2 in the AP slot. Click start.<br>
-                  </li>
-                  <li>Download the&nbsp;PixelExperience installation package&nbsp;<a href="https://download.pixelexperience.org/a52q/" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-4" target="_blank">(A52)</a>
-                    <a href="https://download.pixelexperience.org/a72q/" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-5" target="_blank">(A72)</a>&nbsp;that you would like to install.
-                  </li>
-                  <li>If you are not in recovery, reboot into recovery: With the device powered off, hold&nbsp;<span style="font-style: italic;">Volume Up&nbsp;+&nbsp;Power</span>&nbsp;while the device is connected to a PC via USB cable.<br>
-                  </li>
-                  <li>Now tap&nbsp;Factory Reset, then&nbsp;Format data / factory reset&nbsp;and continue with the formatting process. This will remove encryption and delete all files stored in the internal storage, as well as format your cache partition. Return to the main menu.</li>
-                  <li>Sideload the PixelExperience&nbsp;.zip&nbsp;package:</li>
-                  <li>On the device, select “Apply Update”, then “Apply from ADB” to begin sideload.</li>
-                  <li>On the host machine, sideload the package using:&nbsp;adb sideload filename.zip<br>
-                  </li>
-                  <li>Once you have installed everything successfully, click the back arrow in the top left of the screen, then “Reboot system now”.<br>
-                  </li>
+                  <li>Follow all the <a href="/preinstall.html" class="u-text-palette-1-light-1">preinstall steps from here.</a></li>
+                  <li>Download the PixelExperience zip and recovery tar from here: <a href="https://get.pixelexperience.org/a52q" class="u-text-palette-1-light-1" target="_blank">A52</a>
+                    | <a href="https://get.pixelexperience.org/a72q" class="u-text-palette-1-light-1" target="_blank">A72</a>. Simply download the latest files.</li>
+                  <li>Download the patched VBMeta tar for your device from here: <a href="https://github.com/sm7125-samsung/sm7125-samsung.github.io/releases/tag/vbmeta" class="u-text-palette-1-light-1" target="_blank">Download</a></li>
+                  <li>Power off the device and connect it to a PC.</li>
+                  <li>Now hold <span style="font-style: italic;">Volume Up + Volume Down + Power</span> buttons until you enter Download Mode.</li>
+                  <li>Now, confirm by pressing <span style="font-style: italic;">Volume Up</span> once.</li>
+                  <li>Open Odin and make sure your phone is detected (it says "Added!" in the Message window).</li>
+                  <li>Put the recovery .tar file you downloaded into the AP tab.</li>
+                  <li>Put the vbmeta .tar file you downloaded into the USERDATA tab.</li>
+                  <li>Once the phone reboots after pressing "Start", hold <span style="font-style: italic;">Volume Up + Power</span> buttons until you reach PixelExperience recovery.</li>
+                  <li>Click "Start", the phone will automatically reboot. Now hold <span style="font-style: italic;">Volume Up + Power</span> buttons for at least 10 seconds until you boot into PixelExperience recovery.</li>
+                  <li>If you properly followed all the steps you should now see the PixelExperience recovery menu. If not, repeat all steps.</li>
+                  <li>Now click <span style="font-style: italic;">Factory Reset</span> and confirm the process.</li>
+                  <li>Now select "Apply Update" and then "Apply from ADB" on the phone to sideload the PixelExperience .zip package. Alternatively, copy the PixelExperience zip to your phone's SD card and select "Choose from SD card".</li>
+                  <li>On your Computer, sideload the PixelExperience package using <span style="font-style: italic;">adb sideload PixelExperience.zip</span></li>
+                  <li>Once you have installed everything successfully, click the back arrow in the top left corner of the screen, then “Reboot system now”.</li>
+                  <li>If you did everything correctly then your phone will reboot into PixelExperience.</li>
                 </ol>
               </div>
             </div>
             <div class="u-black u-container-style u-tab-pane u-tab-pane-2" id="tab-0da5" role="tabpanel" aria-labelledby="link-tab-0da5">
               <div class="u-container-layout u-container-layout-2">
                 <ol class="u-text u-text-3">
-                  <li>Follow all the <a href="/preinstall.html" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-6">preinstall steps from here.</a>
-                    <br>
-                  </li>
-                  <li> Install OrangeFox using <a href="/OrangeFox.html" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-7">the guide here</a>, or TWRP (3.7.0_12-2 and later versions) using <a href="/TWRP.html" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-8">the guide here</a>.
-                  </li>
-                  <li>Download the Pixel Experience build for your device <a href="https://download.pixelexperience.org/a52q/" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-9" target="_blank">(A52)</a>
-                    <a href="https://download.pixelexperience.org/a72q/" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-10" target="_blank">(A72)</a>. Gapps are included.
-                  </li>
-                  <li>Flash the Pixel Experience zip, either from sdcard or usb storage, or use adb sideload method.</li>
-                  <li>Format data in OrangeFox/TWRP, otherwise you may end up in a bootloop if using encryption or coming from stock ROM.</li>
-                  <li>Wipe metadata and cache partitions. If metadata partition isnt available in wipe menu you are on ​VERY outdated TWRP/OFox.</li>
-                  <li>Reboot.<br>
-                  </li>
+                  <li>Follow all the <a href="/preinstall.html" class="u-text-palette-1-light-1">preinstall steps from here.</a></li>
+                  <li>Install OrangeFox using <a href="/OrangeFox.html" class="u-text-palette-1-light-1">the guide here</a>, or TWRP using <a href="/TWRP.html" class="u-text-palette-1-light-1">the guide here</a>.</li>
+                  <li>Download the PixelExperience build for your device <a href="https://download.pixelexperience.org/a52q/" class="u-text-palette-1-light-1" target="_blank">A52</a>
+                    | <a href="https://download.pixelexperience.org/a72q/" class="u-text-palette-1-light-1" target="_blank">A72</a>. Google Apps are included.</li>
+                  <li>Copy the PixelExperience zip to your phone's SD card or a USB Storage, or use adb sideload method.</li>
+                  <li>Flash the PixelExperience zip using the "Install" button menu.</li>
+                  <li>After that go to "Wipe", "Format data" and confirm with "yes", otherwise you may end up in a bootloop if using encryption or coming from stock ROM.</li>
+                  <li>Again go into the "Wipe" menu, select "Advanced Wipe" and tick metadata and cache partitions.</li>
+                  <li>If you did everything correctly then your phone will reboot into PixelExperience.</li>
                 </ol>
               </div>
             </div>
