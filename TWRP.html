@@ -62,21 +62,24 @@
       <div class="u-clearfix u-sheet u-sheet-1">
         <img class="u-image u-image-contain u-image-default u-image-1" src="/images/twrp.png" alt="" data-image-width="512" data-image-height="512">
         <h2 class="u-custom-font u-font-montserrat u-text u-text-1">TWRP INSTALL</h2>
-        <ol class="u-align-left u-text u-text-2">
-          <li> Follow all the <a href="/preinstall.html" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-1">preinstall steps from here.</a>
+        <ol class="u-align-left">
+          <li>Unlock your bootloader first by following <a href="/preinstall.html" class="u-text-palette-1-light-1">this</a> guide.
           </li>
-          <li>Download TWRP for your device. <a href="https://twrp.me/samsung/samsunggalaxya52q.html" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-2" target="_blank">(A52)</a>
-            <a href="https://twrp.me/samsung/samsunggalaxya72q.html" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-3" target="_blank">(A72)</a>
+          <li>Download TWRP for your device: <a href="https://twrp.me/samsung/samsunggalaxya52q.html" class="u-text-palette-1-light-1" target="_blank">A52 4G</a>
+            | <a href="https://twrp.me/samsung/samsunggalaxya72q.html" class="u-text-palette-1-light-1" target="_blank">A72</a>
           </li>
-          <li>Turn off your phone, connect it to PC and reboot to download mode by holding down Volume up, Volume down and power button at the same time.</li>
-          <li>Open Odin and check if your device is detected, then untick "Autoreboot" in its settings.</li>
-          <li>Put the tar file you downloaded into the AP tab</li>
-          <li>Click start and wait for the installation to finish, Odin will show PASS</li>
-          <li>Now hold down Power button and Volume down for about 10 seconds to force reboot the device</li>
-          <li>Immediately after the screen goes black release the keys and hold down Volume up and Power button at the same time until you enter TWRP (You may need to release the keys after about 20-30secs due to the "unlocked bootloader" warning)</li>
-          <li>If you properly followed all the steps you should now see the TWRP menu.</li>
-          <li>I&nbsp;<b><b>HIGHLY</b></b>&nbsp;recommend to flash&nbsp;<a href="https://github.com/Simon1511/multidisabler-samsung/releases" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-1 u-btn-4" target="_blank">multidisabler</a>&nbsp;and right after you enter TWRP to disable forced encryption and stock recovery restoration.<br>
-          </li>
+          <li>Remove your screen lock in Settings if you have OneUI installed.</li>
+          <li>Fully turn off your phone.</li>
+          <li>Connect your phone to a PC.</li>
+          <li>Hold Volume Up, Volume Down and the Power button until you enter Download Mode.</li>
+          <li>Release all keys and then press the Volume Up button to confirm.</li>
+          <li>Open Odin and check if your device is detected (it says "Added!" in the Message window).</li>
+          <li>Put the TWRP .tar file you downloaded into the AP tab.</li>
+          <li>Once the phone reboots after pressing "Start", hold down Volume Up and the Power Button until your reach TWRP.</li>
+          <li>Click "Start", the phone will automatically reboot. Now hold down Volume Up and the Power button for at least 10 seconds until you boot into TWRP.</li>
+          <li>If you properly followed all the steps you should now see the TWRP menu. If not, repeat all steps.</li>
+          <li>Once you are in TWRP, go to "Wipe", select "Format Data" at the bottom and type in "yes" to confirm. This will erase all your data!</li>
+          <li>You can now continue to install a custom ROM like <a href="LOS.html" class="u-text-palette-1-light-1">LineageOS</a>, <a href="PE.html" class="u-text-palette-1-light-1">PixelExperience</a>, or <a href="NcX.html" class="u-text-palette-1-light-1">NcX</a>, or keep using the stock ROM.</li>
         </ol>
       </div>
       <style class="darkreader darkreader--sync" media="screen"></style>
