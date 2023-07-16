@@ -33800,7 +33800,7 @@ li.active > a.u-button-style.u-button-style.u-border-active-grey-40 {
 }
 .u-button-style.u-border-grey-50:hover,
 .u-button-style.u-border-grey-50:focus {
-  border-color: transparent !important;
+  border-color: white !important;
   color: #737373 !important;
   background-color: transparent !important;
 }
@@ -33905,7 +33905,7 @@ li.active > a.u-button-style.u-button-style.u-border-active-grey-70 {
 }
 .u-button-style.u-border-grey-75:hover,
 .u-button-style.u-border-grey-75:focus {
-  border-color: transparent !important;
+  border-color: white !important;
   color: #3a3a3a !important;
   background-color: transparent !important;
 }
